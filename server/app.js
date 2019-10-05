@@ -1,11 +1,18 @@
 const express = require('express');
 const ForgeSDK = require('forge-apis');
+const cookieSession = require('cookie-session')
 const app = express();
 const port = 3000;
 
 const AUTODESK_CLIENT_ID = process.env.AUTODESK_CLIENT_ID
 const AUTODESK_CLIENT_SECRET = process.env.AUTODESK_CLIENT_SECRET
 const AUTODESK_REDIRECT_URL = process.env.AUTODESK_REDIRECT_URL
+
+app.use(cookieSession({
+    name: 'session',
+    keys: "blah",
+    maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}));
 
 app.get('/', (req, res) => {res.send("Hello")})
 
@@ -45,10 +52,4 @@ function oauthClient() {
             'data:read'
         ],
         true);
-}
-
-function oauthToken(authCode) {
-    var credentials = ""
-    await
-    return credentials
 }
