@@ -24,6 +24,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 npm install
 npm run build
-node server.js
+node run localstart
 ```
 Should now be up at http://localhost:5000/
