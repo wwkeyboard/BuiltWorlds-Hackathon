@@ -30,3 +30,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * [ ] 
 * [ ] 
 * [ ] 
+
+
+## Heroku setup
+1. `heroku config:set NODE_ENV=production --app builtworldhack
