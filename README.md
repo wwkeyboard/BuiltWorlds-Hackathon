@@ -1,24 +1,4 @@
-# builtworlds-hackathon
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# BuiltWorlds-Hackathon
 
 ## Goal
 * remove extra images from a set of images
@@ -33,4 +13,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 ## Heroku setup
-1. `heroku config:set NODE_ENV=production --app builtworldhack
+1. `heroku config:set NODE_ENV=production --app builtworldhack`
+2. 
